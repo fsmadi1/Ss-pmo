@@ -14,177 +14,803 @@
     />
     <!-- Start Linking CSS -->
     <link rel="stylesheet" href="./style/global.css" />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/home.css" />
     <title>SS-PMO</title>
   </head>
   <body>
-    <div class="main-wrapper">
-      <div class="left">
-        <div class="terminal-loader">
-          <div class="terminal-header">
-            <div class="terminal-title">Status</div>
-            <div class="terminal-controls">
-              <div class="control close"></div>
-              <div class="control minimize"></div>
-              <div class="control maximize"></div>
-            </div>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="inside">
+          <div class="left">
+            <img src="./assets/logo.svg" alt="LOGO" />
           </div>
-          <div class="text">Coming Soon...</div>
+          <div class="right">
+            <ul>
+              <li>Home</li>
+              <li>PULSE PMO</li>
+            </ul>
+            <button>Get Started</button>
+          </div>
+          <div class="menu-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="menu-icon"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="right">
-        <img src="./assets/logo.svg" alt="" />
-        <!--  -->
-        <svg xmlns="http://www.w3.org/2000/svg" height="200" width="200">
-          <g style="order: -1">
-            <polygon
-              transform="rotate(45 100 100)"
-              stroke-width="1"
-              stroke="#d3a410"
-              fill="none"
-              points="70,70 148,50 130,130 50,150"
-              id="bounce"
-            ></polygon>
-            <polygon
-              transform="rotate(45 100 100)"
-              stroke-width="1"
-              stroke="#d3a410"
-              fill="none"
-              points="70,70 148,50 130,130 50,150"
-              id="bounce2"
-            ></polygon>
-            <polygon
-              transform="rotate(45 100 100)"
-              stroke-width="2"
-              stroke=""
-              fill="#414750"
-              points="70,70 150,50 130,130 50,150"
-            ></polygon>
-            <polygon
-              stroke-width="2"
-              stroke=""
-              fill="url(#gradiente)"
-              points="100,70 150,100 100,130 50,100"
-            ></polygon>
-            <defs>
-              <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
-                <stop
-                  style="stop-color: #1e2026; stop-opacity: 1"
-                  offset="20%"
-                ></stop>
-                <stop
-                  style="stop-color: #414750; stop-opacity: 1"
-                  offset="60%"
-                ></stop>
-              </linearGradient>
-            </defs>
-            <polygon
-              transform="translate(20, 31)"
-              stroke-width="2"
-              stroke=""
-              fill="#b7870f"
-              points="80,50 80,75 80,99 40,75"
-            ></polygon>
-            <polygon
-              transform="translate(20, 31)"
-              stroke-width="2"
-              stroke=""
-              fill="url(#gradiente2)"
-              points="40,-40 80,-40 80,99 40,75"
-            ></polygon>
-            <defs>
-              <linearGradient
-                y2="100%"
-                x2="0%"
-                y1="-17%"
-                x1="10%"
-                id="gradiente2"
-              >
-                <stop
-                  style="stop-color: #d3a51000; stop-opacity: 1"
-                  offset="20%"
-                ></stop>
-                <stop
-                  style="stop-color: #d3a51054; stop-opacity: 1"
-                  offset="100%"
-                  id="animatedStop"
-                ></stop>
-              </linearGradient>
-            </defs>
-            <polygon
-              transform="rotate(180 100 100) translate(20, 20)"
-              stroke-width="2"
-              stroke=""
-              fill="#d3a410"
-              points="80,50 80,75 80,99 40,75"
-            ></polygon>
-            <polygon
-              transform="rotate(0 100 100) translate(60, 20)"
-              stroke-width="2"
-              stroke=""
-              fill="url(#gradiente3)"
-              points="40,-40 80,-40 80,85 40,110.2"
-            ></polygon>
-            <defs>
-              <linearGradient
-                y2="100%"
-                x2="10%"
-                y1="0%"
-                x1="0%"
-                id="gradiente3"
-              >
-                <stop
-                  style="stop-color: #d3a51000; stop-opacity: 1"
-                  offset="20%"
-                ></stop>
-                <stop
-                  style="stop-color: #d3a51054; stop-opacity: 1"
-                  offset="100%"
-                  id="animatedStop"
-                ></stop>
-              </linearGradient>
-            </defs>
-            <polygon
-              transform="rotate(45 100 100) translate(80, 95)"
-              stroke-width="2"
-              stroke=""
-              fill="#ffe4a1"
-              points="5,0 5,5 0,5 0,0"
-              id="particles"
-            ></polygon>
-            <polygon
-              transform="rotate(45 100 100) translate(80, 55)"
-              stroke-width="2"
-              stroke=""
-              fill="#ccb069"
-              points="6,0 6,6 0,6 0,0"
-              id="particles"
-            ></polygon>
-            <polygon
-              transform="rotate(45 100 100) translate(70, 80)"
-              stroke-width="2"
-              stroke=""
-              fill="#fff"
-              points="2,0 2,2 0,2 0,0"
-              id="particles"
-            ></polygon>
-            <polygon
-              stroke-width="2"
-              stroke=""
-              fill="#292d34"
-              points="29.5,99.8 100,142 100,172 29.5,130"
-            ></polygon>
-            <polygon
-              transform="translate(50, 92)"
-              stroke-width="2"
-              stroke=""
-              fill="#1f2127"
-              points="50,50 120.5,8 120.5,35 50,80"
-            ></polygon>
-          </g>
-        </svg>
-      </div>
-      <!--  -->
     </div>
+    <!-- End Header -->
+
+    <!-- Start Hero Section -->
+    <div class="hero-section">
+      <div class="container">
+        <div class="inside">
+          <div class="text">
+            <!-- <img src="./assets/logo.svg" alt="LOGO" /> -->
+            <div class="text">
+              <h1>Sustainable Solution Co.</h1>
+              <p>PMO Consultancy</p>
+            </div>
+          </div>
+          <span>Not just a solution...</span>
+          <span>Sustainable Solution.</span>
+          <p>
+            Empowering Saudi Arabia's mega projects with disciplined PMO
+            frameworks, executive visibility, and sustainable performance
+            delivery.
+          </p>
+          <div class="buttons">
+            <button class="button-1">Our Services</button>
+            <button class="button-2">Contact Us</button>
+          </div>
+          <a class="down-scroller" href="#about-us"></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero Section -->
+    <!--  -->
+    <!-- Start About US -->
+    <div class="about-us" id="about-us">
+      <div class="container">
+        <div class="inside">
+          <div class="title-container">
+            <h2 class="main-title blue-yellow">About <span>Us</span></h2>
+            <p>Where governance, execution, and performance come together.</p>
+          </div>
+          <!--  -->
+          <div class="about-content">
+            <div class="box-style-1">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-target w-7 h-7 text-primary"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <h3 class="blue">Vission</h3>
+              </div>
+              <p>
+                To be the most trusted PMO and Project Management partner in
+                Saudi Arabia, enabling organizations to deliver projects with
+                excellence, discipline, and sustainable performance.
+              </p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-navigation w-7 h-7 text-primary"
+                >
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                <h3 class="blue">Mission</h3>
+              </div>
+              <p>
+                To empower clients with governed PMO frameworks and professional
+                project management execution, supported by strong control
+                systems and executive visibility, ensuring projects are
+                delivered on time, within budget, and to the expected quality.
+              </p>
+            </div>
+            <!-- <>-<>-<> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About US -->
+    <!--  -->
+    <!-- Start What we offer -->
+    <div class="scope">
+      <div class="container">
+        <div class="inside">
+          <div class="title-container">
+            <h2 class="main-title yellow-blue">What We <span>Offer</span></h2>
+            <p>
+              Structured PMO solutions and hands-on project leadership that
+              drive control, clarity, and results.
+            </p>
+          </div>
+          <!--  -->
+          <div class="scope-content">
+            <div class="box-style-1">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-layout-grid w-7 h-7 text-primary"
+                >
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <h3 class="blue">Establish & Govern PMOs</h3>
+              </div>
+              <p>
+                Specialized PMO consultancy supporting organizations, project
+                owners, and mega contractors in Saudi Arabia. We establish
+                highperforming PMOs with structure, discipline, and strategic
+                control.
+              </p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-briefcase w-7 h-7 text-primary"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                </svg>
+                <h3 class="blue">Direct Project Management</h3>
+              </div>
+              <p>
+                Professional project management teams providing hands-on
+                execution. We directly manage client projects ensuring practical
+                delivery on time, within budget, and to expected quality
+                standards.
+              </p>
+            </div>
+            <!-- <>-<>-<> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End What we offer -->
+
+    <!--  -->
+    <!-- Start Our Services -->
+    <div class="our-services">
+      <div class="container">
+        <div class="inside">
+          <div class="title-container">
+            <h2 class="main-title blue-yellow">Our <span>Services</span></h2>
+            <p>
+              Comprehensive PMO and project management solutions tailored for
+              mega projects and enterprise-scale initiatives.
+            </p>
+          </div>
+
+          <div class="services-content">
+            <!-- 1 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- PMO Framework -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+                <h3 class="blue">Tailored PMO Establishment & Governance</h3>
+              </div>
+              <p>
+                Frameworks, policies, maturity development & operating models
+              </p>
+            </div>
+
+            <!-- 2 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Governance -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12 3l8 4v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z"
+                  />
+                </svg>
+                <h3 class="blue">Portfolio, Program & Project Governance</h3>
+              </div>
+              <p>Prioritization, performance oversight & disciplined control</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Execution -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14 3h7v7" />
+                  <path d="M21 3l-9 9" />
+                  <path d="M5 12v7h7" />
+                </svg>
+                <h3 class="blue">Direct Project Management Execution</h3>
+              </div>
+              <p>
+                End-to-end project management delivered by our in-house experts
+              </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Planning -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="14" y2="18" />
+                </svg>
+                <h3 class="blue">Planning & Schedule Control</h3>
+              </div>
+              <p>
+                Baselines, monitoring, delay analysis & performance assurance
+              </p>
+            </div>
+
+            <!-- 5 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Cost -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12h8" />
+                  <path d="M12 7v10" />
+                </svg>
+                <h3 class="blue">Cost & Financial Governance</h3>
+              </div>
+              <p>
+                Budget structuring, cash flow, cost control & value protection
+              </p>
+            </div>
+
+            <!-- 6 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Risk & Quality -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2l10 18H2L12 2z" />
+                  <line x1="12" y1="8" x2="12" y2="13" />
+                  <circle cx="12" cy="17" r="1" />
+                </svg>
+                <h3 class="blue">Risk, Quality & Compliance</h3>
+              </div>
+              <p>Risk frameworks, quality systems & continuous improvement</p>
+            </div>
+
+            <!-- 7 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Digital Dashboard -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="14" />
+                  <line x1="7" y1="21" x2="17" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                <h3 class="blue">
+                  Digital PMO Platforms & Executive Dashboards
+                </h3>
+              </div>
+              <p>PMIS enablement & real-time executive visibility</p>
+            </div>
+
+            <!-- 8 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Claims -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16l4-4h8a2 2 0 0 0 2-2V6z" />
+                  <line x1="9" y1="10" x2="15" y2="10" />
+                  <line x1="9" y1="14" x2="13" y2="14" />
+                </svg>
+                <h3 class="blue">Claims & EOT Support</h3>
+              </div>
+              <p>Claims governance, documentation & dispute protection</p>
+            </div>
+
+            <!-- 9 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Training -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 10L12 4 2 10l10 6 10-6z" />
+                  <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" />
+                </svg>
+                <h3 class="blue">Training & Capability Building</h3>
+              </div>
+              <p>
+                Upskilling teams and reinforcing sustainable project culture
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Services -->
+    <!-- ... -->
+
+    <!-- Start Business Benefits -->
+    <div class="business-benefits">
+      <div class="container">
+        <div class="inside">
+          <div class="title-container">
+            <h2 class="main-title yellow-blue">
+              Business <span>Key</span> Benefits
+            </h2>
+            <p>
+              Measurable improvements in performance, decision-making, and
+              project outcomes.
+            </p>
+          </div>
+
+          <div class="business-benefits-content">
+            <!-- Box 1 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Efficiency -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M3 12h6l3-9 3 18 3-9h6" />
+                </svg>
+                <h3 class="blue">Improved Efficiency</h3>
+              </div>
+              <p>Accelerate project delivery with optimized workflows.</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Clarity -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <h3 class="blue">Enhanced Clarity</h3>
+              </div>
+              <p>Increase transparency and accountability.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Leadership -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M5.5 21a6.5 6.5 0 0 1 13 0" />
+                </svg>
+                <h3 class="blue">Empowered Management</h3>
+              </div>
+              <p>Equip leaders with real-time insights.</p>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Time & Cost -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+                <h3 class="blue">Time & Cost Control</h3>
+              </div>
+              <p>Reduce budget overruns and delays.</p>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="box-style-1">
+              <div class="title">
+                <!-- Data Driven -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="6" y1="20" x2="6" y2="10" />
+                  <line x1="12" y1="20" x2="12" y2="6" />
+                  <line x1="18" y1="20" x2="18" y2="14" />
+                </svg>
+                <h3 class="blue">Data-Driven Culture</h3>
+              </div>
+              <p>Foster data-based decision making.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Business Benefits -->
+
+    <!-- ... -->
+    <!-- Start Why Us -->
+    <div class="why-us">
+      <div class="container">
+        <div class="inside">
+          <div class="title-container">
+            <h2 class="main-title blue-yellow">
+              Why <span>Sustainable Solution</span>?
+            </h2>
+            <p>
+              Partner with a consultancy that understands the unique challenges
+              of mega projects in Saudi Arabia.
+            </p>
+          </div>
+          <!--  -->
+          <div class="stats">
+            <div class="container">
+              <div class="inside">
+                <div class="box">
+                  <span class="number">20+</span>
+                  <span class="title">Years of Experience</span>
+                </div>
+                <!-- <>-<>-<> -->
+                <div class="box">
+                  <span class="number">50+</span>
+                  <span class="title">Projects Delivered</span>
+                </div>
+                <!-- <>-<>-<> -->
+                <div class="box">
+                  <span class="number">100%</span>
+                  <span class="title">Client Focus</span>
+                </div>
+                <!-- <>-<>-<> -->
+                <div class="box">
+                  <span class="number">24/7</span>
+                  <span class="title">Support Available</span>
+                </div>
+                <!-- <>-<>-<> -->
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="why-us-content">
+            <div class="box-style-1 why-us-box">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-6 h-6 text-accent shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <h3 class="blue">Strong PMO governance</h3>
+              </div>
+              <p>Practical execution capability with proven methodologies</p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1 why-us-box">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-6 h-6 text-accent shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <h3 class="blue">Result-driven approach</h3>
+              </div>
+              <p>Focus on tangible outcomes, not theoretical consulting</p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1 why-us-box">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-6 h-6 text-accent shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <h3 class="blue">Market-aligned solutions</h3>
+              </div>
+              <p>Tailored to Saudi market realities and cultural context.</p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1 why-us-box">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-6 h-6 text-accent shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <h3 class="blue">Executive visibility</h3>
+              </div>
+              <p>transparent reporting and governance.</p>
+            </div>
+            <!-- <>-<>-<> -->
+            <div class="box-style-1 why-us-box">
+              <div class="title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check w-6 h-6 text-accent shrink-0 mt-0.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                <h3 class="blue">Sustainable systems</h3>
+              </div>
+              <p>Delivering measurable, long-term business value.</p>
+            </div>
+            <!-- <>-<>-<> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Why Us -->
+    <!--  -->
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="inside">
+          <div class="top">
+            <img src="./assets/logo.svg" alt="LOGO" />
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.88 19.88 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.88 19.88 0 0 1 2.08 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.81.37 1.6.73 2.33a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.73.36 1.52.61 2.33.73A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              +966 58 251 1555
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"
+                />
+              </svg>
+              Riyadh, Saudi Arabia
+            </p>
+          </div>
+          <div class="bottom">
+            © 2026 Sustainable Solution PMO. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
