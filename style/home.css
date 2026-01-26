@@ -376,7 +376,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
-  min-width: 225px;
+  min-width: 210px;
 }
 
 .footer .container .inside .top p svg {
@@ -388,7 +388,7 @@
   border-radius: 5px;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 991px) {
   .footer .container .inside .top {
     flex-direction: column;
     gap: 1em;
