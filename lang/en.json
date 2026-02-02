@@ -1,0 +1,96 @@
+{
+    "header": {
+        "a1": "Home",
+        "a2": "Pulse PMO",
+        "btn": "Get Started"
+    },
+    "hero": {
+        "h1": "Sustainable Solution Co.",
+        "p1": "PMO Consultancy.",
+        "span1": "Not just a solution...",
+        "span2": "Sustainable Solution.",
+        "p2": " Empowering Saudi Arabia's mega projects with disciplined PMO frameworks, executive visibility, and sustainable performance delivery.",
+        "btn1": "Our Services",
+        "btn2": "Contact Us"
+    },
+    "about": {
+        "mainTitle": "About <span>Us</span>",
+        "keyParagraph": "Where governance, execution, and performance come together.",
+        "box1H3": "Vission",
+        "box1P": "To be the most trusted PMO and Project Management partner in Saudi Arabia, enabling organizations to deliver projects with excellence, discipline, and sustainable performance.",
+        "box2H3": "Mission",
+        "box2P": "To empower clients with governed PMO frameworks and professional project management execution, supported by strong control systems and executive visibility, ensuring projects are delivered on time, within budget, and to the expected quality."
+    },
+    "scope": {
+        "mainTitle": "What We <span>Offer</span>",
+        "keyParagraph": "Structured PMO solutions and hands-on project leadership that drive control, clarity, and results.",
+        "box1H3": "Establish & Govern PMOs",
+        "box1P": " Specialized PMO consultancy supporting organizations, project owners, and mega contractors in Saudi Arabia. We establish highperforming PMOs with structure, discipline, and strategic control.",
+        "box2H3": "Direct Project Management",
+        "box2P": "Professional project management teams providing hands-on execution. We directly manage client projects ensuring practical delivery on time, within budget, and to expected quality standards."
+    },
+    "service": {
+        "mainTitle": "Our <span>Services</span>",
+        "keyParagraph": "Comprehensive PMO and project management solutions tailored for mega projects and enterprise-scale initiatives.",
+        "box1H3": "Tailored PMO Establishment & Governance",
+        "box1P": "Frameworks, policies, maturity development & operating models.",
+        "box2H3": "Restructuring Companies & Improving Operational Performance",
+        "box2P": "Prioritization, performance oversight & disciplined governance.",
+        "box3H3": "Direct Project Management Execution",
+        "box3P": "End-to-end project management delivered by our in-house experts.",
+        "box4H3": "Planning & Risk Control",
+        "box4P": "Baselines, monitoring, delay analysis & performance assurance",
+        "box5H3": "Cost & Financial Governance",
+        "box5P": "Budget structuring, cash flow, cost control & value protection.",
+        "box6H3": "Performance Management & KPI’s",
+        "box6P": "Development of customized Key Performance Indicators.",
+        "box7H3": "Digital PMO Platforms & Executive Dashboards",
+        "box7P": "PMIS enablement & real-time executive visibility.",
+        "box8H3": "Claims & EOT Support",
+        "box8P": "Claims governance, documentation & dispute protection.",
+        "box9H3": "Training & Capability Building",
+        "box9P": "Upskilling teams and reinforcing sustainable project culture."
+    },
+    "business": {
+        "mainTitle": "Business <span>Key</span> Benefits",
+        "keyParagraph": "Measurable improvements in performance, decision-making, and project outcomes.",
+        "box1H3": "Improved Efficiency",
+        "box1P": "Accelerate projects delivery with optimized workflows across organizations.",
+        "box2H3": "Enhanced Clarity",
+        "box2P": "Increase transparency and accountability.",
+        "box3H3": "Empowered Management",
+        "box3P": "Equip leaders with real-time insights.",
+        "box4H3": "Time & Cost Control",
+        "box4P": "Reduce budget overruns and delays.",
+        "box5H3": "Data-Driven Culture",
+        "box5P": "Foster data-based decision making."
+    },
+    "whySS": {
+        "mainTitle": "Why <span>Sustainable Solution</span>?",
+        "keyParagraph": "Partner with a consultancy that understands the unique challenges of mega projects in Saudi Arabia.",
+        "stats1Value": "20+",
+        "stats1Title": "Years of Experience",
+        "stats2Value": "50+",
+        "stats2Title": "Projects Delivered",
+        "stats3Value": "100%",
+        "stats3Title": "Client Focus",
+        "stats4Value": "24/7",
+        "stats4Title": "Support Available",
+        "box1H3": "Not Just Consultants - We Deliver",
+        "box1P": "Practical execution capability with proven methodologies.",
+        "box2H3": "Result-driven approach",
+        "box2P": "Focus on tangible outcomes, not theoretical consulting.",
+        "box3H3": "Market-aligned solutions",
+        "box3P": "Tailored to Saudi market realities and cultural context.",
+        "box4H3": "Executive visibility",
+        "box4P": "Transparent real-time reporting and governance.",
+        "box5H3": "Sustainable systems",
+        "box5P": "Delivering measurable, long-term business value."
+    },
+    "footer": {
+        "phone": "+966 58 251 1555",
+        "email": "info@ss-pmo.com",
+        "location": "Riyadh, Saudi Arabia",
+        "rights": "© 2026 Sustainable Solution PMO. All rights reserved."
+    }
+}

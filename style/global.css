@@ -172,6 +172,11 @@ ul {
   opacity: 0.1;
 }
 
+html[lang="ar"] .box-style-1::before {
+  right: unset;
+  left: 0;
+}
+
 .box-style-1:hover {
   border-color: var(--shadow-blue);
 }
@@ -194,6 +199,10 @@ ul {
 
 .box-style-1.why-us-box .title {
   margin-bottom: 0;
+}
+
+html[lang="ar"] .box-style-1.why-us-box .title {
+  margin-bottom: 0.5em;
 }
 
 .box-style-1 .title svg {

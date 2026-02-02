@@ -40,15 +40,98 @@
 
 .header .container .inside .menu-icon svg {
   color: white;
+  width: 5em;
+  height: 2em;
 }
 
 .header .container .inside .left {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .header .container .inside .left img {
   width: 80px;
 }
+
+/* (Header)-> Start Language Toggle */
+/* - - - - - - - - - - - - - - - -  */
+
+.flipswitch {
+  direction: ltr;
+  position: relative;
+  width: 120px;
+}
+
+.flipswitch input[type="checkbox"] {
+  display: none;
+}
+
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 41px;
+  border: 1px solid white;
+}
+
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.flipswitch-inner:before,
+.flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 38px;
+  padding: 0;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.flipswitch-inner:before {
+  content: "العربية";
+  padding-left: 15px;
+  background-color: var(--shadow-blue);
+  color: #ffffff;
+}
+
+.flipswitch-inner:after {
+  content: "English";
+  padding-right: 15px;
+  background-color: var(--shadow-yellow);
+  color: white;
+  text-align: right;
+}
+
+.flipswitch-switch {
+  width: 25px;
+  height: 25px;
+  /* margin: 6.5px; */
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  /* top: 1px; */
+  top: 50%;
+  transform: translateY(-50%);
+  right: 88px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 8px;
+}
+
+/* (Header):-> Start Right */
 
 .header .container .inside .right {
   display: flex;
@@ -69,7 +152,7 @@
   gap: 2em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   .header .container .inside .right {
     position: absolute;
     display: none;
@@ -171,8 +254,13 @@
 }
 
 .hero-section .container .inside > .text p {
-  margin: 0;
+  margin: 0 auto;
   color: hsl(0 0% 65%);
+  max-width: 28em;
+}
+
+html[lang="ar"] .hero-section .container .inside > .text p {
+  margin-top: 0.5em;
 }
 
 .hero-section .container .inside > span {
@@ -184,16 +272,25 @@
 
 .hero-section .container .inside > span:first-of-type {
   color: white;
+  margin-top: 1em;
+}
+
+html[lang="ar"] .hero-section .container .inside > span:first-of-type {
 }
 
 .hero-section .container .inside > span:last-of-type {
   color: var(--shadow-yellow);
+  margin-bottom: 1em;
+}
+
+html[lang="ar"] .hero-section .container .inside > span:last-of-type {
+  line-height: 2;
 }
 
 .hero-section .container .inside > p {
   color: hsl(0 0% 65%);
   max-width: 40em;
-  margin: 1.5em auto;
+  margin: 1em auto 2em;
 }
 
 .hero-section .container .inside > .buttons {
@@ -327,36 +424,36 @@
 }
 
 .why-us .stats {
-  display: flex;
+  /* display: flex; */
 }
 
-.why-us .stats .container .inside {
+.why-us .stats {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5em;
   margin-bottom: 3em;
 }
 
-.why-us .stats .container .inside .box {
+.why-us .stats .box {
   background-color: rgba(0, 0, 0, 0.335);
 
   border-radius: 10px;
   padding: 25px;
 }
 
-.why-us .stats .container .inside .box span {
+.why-us .stats .box span {
   display: block;
   text-align: center;
 }
 
-.why-us .stats .container .inside .box span.number {
+.why-us .stats .box span.number {
   font-weight: bold;
   font-size: 2.25em;
   color: var(--primary-yellow);
   margin-bottom: 5px;
 }
 
-.why-us .stats .container .inside .box span.title {
+.why-us .stats .box span.title {
   color: hsl(0 0% 65%);
 }
 
@@ -379,6 +476,10 @@
   width: 80px;
 }
 
+.footer .container .inside .top p.phone-number span {
+  direction: ltr;
+}
+
 .footer .container .inside p,
 .footer .container .inside .bottom {
   color: hsl(0 0% 65%);
@@ -397,7 +498,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 1em;
-  min-width: 210px;
+  min-width: 280px;
 }
 
 .footer .container .inside .top p svg {
