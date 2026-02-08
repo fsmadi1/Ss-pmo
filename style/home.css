@@ -48,11 +48,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .header .container .inside .left img {
-  width: 80px;
+  width: 100px;
 }
 
 /* (Header)-> Start Language Toggle */
@@ -61,7 +61,7 @@
 .flipswitch {
   direction: ltr;
   position: relative;
-  width: 120px;
+  width: 100px;
 }
 
 .flipswitch input[type="checkbox"] {
@@ -86,40 +86,39 @@
 .flipswitch-inner:after {
   float: left;
   width: 50%;
-  height: 38px;
+  height: 28px;
   padding: 0;
-  line-height: 38px;
+  line-height: 28px;
   color: white;
   font-weight: bold;
+  font-size: 0.9em;
   box-sizing: border-box;
 }
 
 .flipswitch-inner:before {
   content: "العربية";
-  padding-left: 15px;
+  padding-left: 10px;
   background-color: var(--shadow-blue);
   color: #ffffff;
 }
 
 .flipswitch-inner:after {
   content: "English";
-  padding-right: 15px;
+  padding-right: 10px;
   background-color: var(--shadow-yellow);
   color: white;
   text-align: right;
 }
 
 .flipswitch-switch {
-  width: 25px;
-  height: 25px;
-  /* margin: 6.5px; */
-  background: #ffffff;
+  width: 15px;
+  height: 15px;
+  background: white;
   border-radius: 50%;
   position: absolute;
-  /* top: 1px; */
   top: 50%;
   transform: translateY(-50%);
-  right: 88px;
+  right: 78px;
   transition: all 0.3s ease-in 0s;
 }
 
@@ -190,14 +189,24 @@
   color: white;
 }
 
-.header .container .inside .right button {
+.header .container .inside .right > a {
   border: none;
   outline: none;
+  color: black;
   background-color: var(--primary-yellow);
   border-radius: 5px;
   padding: 10px 15px;
   font-weight: bold;
+  font-size: 0.9em;
+  /*  */
   cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.header .container .inside .right > a:hover {
+  background-color: var(--shadow-yellow);
+  color: white;
 }
 
 /* End Header */
@@ -242,9 +251,6 @@
   margin-bottom: 1em;
 }
 
-.hero-section .container .inside > .text img {
-}
-
 .hero-section .container .inside > .text h1 {
   text-align: center;
   margin: 0;
@@ -275,9 +281,6 @@ html[lang="ar"] .hero-section .container .inside > .text p {
   margin-top: 1em;
 }
 
-html[lang="ar"] .hero-section .container .inside > span:first-of-type {
-}
-
 .hero-section .container .inside > span:last-of-type {
   color: var(--shadow-yellow);
   margin-bottom: 1em;
@@ -299,25 +302,39 @@ html[lang="ar"] .hero-section .container .inside > span:last-of-type {
   gap: 1.5em;
 }
 
-.hero-section .container .inside > .buttons button {
+.hero-section .container .inside > .buttons a {
   border-radius: 5px;
   border: none;
   outline: none;
   padding: 10px 15px;
   font-weight: bold;
+  font-size: 0.9em;
+  /*  */
   cursor: pointer;
   min-width: 150px;
+  /*  */
+  transition: 0.3s;
 }
 
-.hero-section .container .inside > .buttons button:first-child {
+.hero-section .container .inside > .buttons a:first-child {
   background-color: var(--primary-yellow);
+  color: black;
 }
 
-.hero-section .container .inside > .buttons button:last-child {
+.hero-section .container .inside > .buttons a:first-child:hover {
+  background-color: var(--shadow-yellow);
+  color: white;
+}
+
+.hero-section .container .inside > .buttons a:last-child {
   background-color: transparent;
   font-weight: normal;
   color: white;
   border: 1px solid var(--primary-blue);
+}
+
+.hero-section .container .inside > .buttons a:last-child:hover {
+  background-color: var(--shadow-blue);
 }
 
 .hero-section .container .inside .down-scroller {
@@ -473,7 +490,7 @@ html[lang="ar"] .hero-section .container .inside > span:last-of-type {
 }
 
 .footer .container .inside .top img {
-  width: 80px;
+  width: 100px;
 }
 
 .footer .container .inside .top p.phone-number span {
