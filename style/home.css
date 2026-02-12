@@ -156,7 +156,7 @@
 
 .header .container .inside .right.show-menu {
   opacity: 1;
-  transform: translateY(0);
+  transform: scaleY(1);
 }
 
 .header .container .inside .right ul {
@@ -169,10 +169,8 @@
   .header .container .inside .right {
     position: absolute;
     opacity: 0;
-    transform: translateY(calc(-120px - 100%));
-    /*  */
-    /* display: none; */
-
+    transform: scaleY(0);
+    transform-origin: top;
     /*  */
     top: calc(1em + 100%);
     flex-direction: column;
