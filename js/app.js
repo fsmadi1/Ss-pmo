@@ -34,8 +34,7 @@ function applyTranslations() {
 // End Languages Functions   ---- END
 
 // Fetch Json Data
-
-//
+// ----------------
 
 document.addEventListener("DOMContentLoaded", () => {
   loadLang("ar");
@@ -44,8 +43,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 menuIcon.addEventListener("click", (event) => {
   mobileMenu.classList.toggle("show-menu");
-  // Try Lang Toggle
 });
+
+//  --- --- ---
+
+Array.from(mobileMenu.children).forEach((child) => {
+  child.onclick = () => {
+    if (child.children.length > 0) {
+      const items = child.querySelectorAll("li");
+      //
+      items.forEach((li) => {
+        li.addEventListener("click", () => {
+          mobileMenu.classList.remove("show-menu");
+        });
+      });
+    } else {
+      mobileMenu.classList.remove("show-menu");
+    }
+  };
+});
+
+//  --- --- ---
+
+document.addEventListener("click", (event) => {
+  // console.log(event.target);
+  if (
+    !event.target.classList.contains("menu-icon") &&
+    !mobileMenu.contains(event.target)
+  ) {
+    mobileMenu.classList.remove("show-menu");
+  }
+});
+
+//  --- --- ---
 
 addEventListener("resize", () => {
   if (window.innerWidth > 500) {
@@ -82,6 +112,7 @@ let calcScrollValue = () => {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
+  //
   scrollProgress.style.background = `conic-gradient(#f1cd53 ${scrollValue}%, transparent ${scrollValue}%)`;
 };
 window.onscroll = calcScrollValue;

@@ -6,6 +6,13 @@
 
 :root {
   --body-bg: linear-gradient(145deg, #0f1c22 0%, #1f5f7c 45%, #121212 100%);
+  /* Background for Safari Browser */
+  --body-bg-safari: linear-gradient(
+    145deg in srgb,
+    #0f1c22 0%,
+    #1f5f7c 45%,
+    #121212 100%
+  );
   /*  */
   --primary-blue: #2c88b2;
   --shadow-blue: #1f5f7c;
@@ -22,7 +29,8 @@ html {
 body {
   margin: 0;
   font-family: "Readex Pro", sans-serif;
-  background: var(--body-bg);
+  background-color: #121212;
+  background-image: var(--body-bg-safari);
   background-attachment: fixed;
   /*  */
 }
