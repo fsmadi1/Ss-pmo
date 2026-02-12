@@ -24,6 +24,7 @@ body {
   font-family: "Readex Pro", sans-serif;
   background: var(--body-bg);
   background-attachment: fixed;
+  /*  */
 }
 
 a {
@@ -136,6 +137,37 @@ ul {
   text-align: center;
 }
 /* End Main Title */
+
+/* Start Scroll To Top Button */
+
+#btn-scroll-top {
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--grey-color);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  background-color: var(--shadow-blue);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* End Scroll To Top Button */
 
 /* Start Box Style 1 */
 .box-style-1 {
