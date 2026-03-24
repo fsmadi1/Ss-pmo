@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Pulse PMO | Intelligent Project Governance</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#009cb2",
+            "background-light": "#f6f6f8",
+            "background-dark": "#0a192f",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+
+</head>
+
+<body class="bg-background-light text-slate-900 font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+    <!-- Start Header -->
+    <header class="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md px-6 md:px-20 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="p-1.5 rounded-lg text-white">
+            <img src="/assets/pulse-pmo/logo.svg" alt="logo" class="w-24">
+          </div>
+        </div>
+        <!-- Start NavBar -->
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-slate-600 text-sm font-semibold hover:text-primary transition-colors" href="/">Back To
+            SS-PMO</a>
+        </nav>
+        <!-- End NavBar -->
+        <div class="flex items-center gap-3">
+          <button
+            class="hidden sm:flex px-4 py-2 text-slate-700 text-sm font-bold hover:bg-slate-100 rounded-lg transition-all">Login</button>
+          <button
+            class="bg-primary text-white px-5 py-2.5 rounded-lg text-sm font-bold shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all">
+            Request a Demo
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero -->
+    <section class="relative bg-white pt-20 pb-24 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-20 flex flex-col lg:flex-row items-center gap-16">
+        <div class="flex-1 text-left z-10">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold mb-6 tracking-wider uppercase">
+            <span class="material-symbols-outlined !text-sm">verified</span> Connecting teams. Streamlining processes.
+            Pulse PMO
+          </div>
+          <h1 class="text-slate-900 text-5xl md:text-6xl font-black leading-[1.1] mb-6 tracking-tight">
+            Pulse PMO — Intelligent Project Governance.
+          </h1>
+          <p class="text-slate-600 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+            Pulse PMO is a SaaS platform designed for contracting & construction companies to streamline communication,
+            automate workflows, and give top management real-time clarity on projects.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-primary text-white px-8 py-4 rounded-xl text-base font-bold shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+              Request a Demo
+            </button>
+            <button
+              class="bg-slate-100 text-slate-700 px-8 py-4 rounded-xl text-base font-bold hover:bg-slate-200 transition-all">
+              Explore Features
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+            <img class="w-full h-auto" data-alt="Corporate dashboard showing complex project analytics and charts"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5PGMmyPHYKh3vr8e0qCx_nwi0SWYxrsclyDspn-01SQoDqWCqOb0IedCvw-oEppbW558vVplCYC722tjVx9THOVXVLhBEpeezpSGu8GXI4yHR9CbHr4SGdq7dAKWBF4Oing3YFGNqyexp03pJo1-ck-_YP9FlEp0a-nHtn2l4G9kzrCcCi4lyEaVOOc5T_np_8nEFsGTkJd_Z_b4UXv_SFKh_eOPwoCkp0zk79NPoiZSozetbji71SLAT6rC2cBjKDXxeA_78qu8" />
+            <div class="absolute inset-0 bg-gradient-to-tr from-primary/5 via-transparent to-transparent"></div>
+          </div>
+          <div
+            class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 hidden md:flex">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
+              <span class="material-symbols-outlined">trending_up</span>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-bold uppercase tracking-wider">Efficiency Gain</div>
+              <div class="text-2xl font-black text-slate-900">+42%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl">
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Start Industry Challenges -->
+    <section class="py-24 bg-background-dark text-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="grid lg:grid-cols-4 gap-8">
+          <div class="lg:col-span-1">
+            <h2 class="text-primary font-bold uppercase text-xs tracking-widest mb-4">Our Solution</h2>
+            <h3 class="text-3xl font-black mb-6">Industry Challenges</h3>
+            <p class="text-slate-400 leading-relaxed">Key challenges in the contracting and construction industry</p>
+          </div>
+          <div class="lg:col-span-3 grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all">
+              <span class="material-symbols-outlined text-primary !text-4xl mb-4">visibility_off</span>
+              <h4 class="text-xl font-bold mb-3">Lack of Real-Time Visibility</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Information silos between departments make project
+                progress difficult to track.</p>
+            </div>
+            <div class="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all">
+              <span class="material-symbols-outlined text-primary !text-4xl mb-4">pending_actions</span>
+              <h4 class="text-xl font-bold mb-3">Inefficient Manual Processes</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Manual workflows cause project delays and communication
+                breakdowns.</p>
+            </div>
+            <div class="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all">
+              <span class="material-symbols-outlined text-primary !text-4xl mb-4">query_stats</span>
+              <h4 class="text-xl font-bold mb-3">KPI Tracking Difficulties</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Challenging to track KPIs and assess overall project
+                health effectively.</p>
+            </div>
+            <div class="p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition-all">
+              <span class="material-symbols-outlined text-primary !text-4xl mb-4">insights</span>
+              <h4 class="text-xl font-bold mb-3">Insufficient Management Insights</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Leaders lack clear insights for timely and effective
+                decision-making.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Industry Challenges -->
+
+    <!-- Start Pulse PMO Solution Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-black text-slate-900 mb-2">Pulse PMO Solution Overview</h2>
+          <!-- Gradient underline -->
+          <div class="w-20 h-1 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">Our comprehensive approach to project management:</p>
+        </div>
+        <!-- overview elements -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- Integrated Project Management -->
+          <div
+            class="flex flex-col items-center text-center p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-primary/30 transition-all group">
+            <div
+              class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined !text-3xl">integration_instructions</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Integrated Project Management</h4>
+            <p class="text-slate-600 text-xs mt-2">Connecting all aspects of project delivery</p>
+          </div>
+
+          <!-- Centralized Workflows -->
+          <div
+            class="flex flex-col items-center text-center p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-primary/30 transition-all group">
+            <div
+              class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined !text-3xl">account_tree</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Centralized Workflows</h4>
+            <p class="text-slate-600 text-xs mt-2">Integrates workflows across departments</p>
+          </div>
+
+          <!-- Automated Monitoring -->
+          <div
+            class="flex flex-col items-center text-center p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-primary/30 transition-all group">
+            <div
+              class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined !text-3xl">monitoring</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Automated Monitoring</h4>
+            <p class="text-slate-600 text-xs mt-2">Real-time insights with intelligent dashboards</p>
+          </div>
+
+          <!-- Transparency Tools -->
+          <div
+            class="flex flex-col items-center text-center p-6 rounded-2xl border border-slate-100 bg-slate-50 hover:border-primary/30 transition-all group">
+            <div
+              class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-white transition-all">
+              <span class="material-symbols-outlined !text-3xl">visibility</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm">Transparency Tools</h4>
+            <p class="text-slate-600 text-xs mt-2">Clear visibility for accurate decisions</p>
+          </div>
+        </div>
+        <!-- Start Key Benefits -->
+        <div class="mt-16 max-w-4xl">
+          <!-- Note -->
+          <p class="flex items-center text-primary font-semibold mb-6 border-l-4 border-primary pl-3">
+            Key Benefits
+          </p>
+
+          <!-- Benefits List -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Benefit 1 -->
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 flex items-center justify-center text-primary rounded-full">
+                <span class="material-symbols-outlined !text-xl">check_circle</span>
+              </div>
+              <p class="text-slate-900 font-medium">Improved project delivery</p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 flex items-center justify-center text-primary rounded-full">
+                <span class="material-symbols-outlined !text-xl">check_circle</span>
+              </div>
+              <p class="text-slate-900 font-medium">Enhanced team collaboration</p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 flex items-center justify-center text-primary rounded-full">
+                <span class="material-symbols-outlined !text-xl">check_circle</span>
+              </div>
+              <p class="text-slate-900 font-medium">Data-driven decisions</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Key Benefits -->
+      </div>
+    </section>
+    <!-- End Pulse PMO Solution Overview -->
+
+    <!-- Start Key Product Features -->
+    <section class="py-24 bg-background-light" id="features">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-2">Key Product Features</h2>
+          <!-- Gradient underline -->
+          <div class="w-20 h-1 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+          <p class="text-slate-600 max-w-2xl mx-auto">Essential features of Pulse PMO:</p>
+        </div>
+        <!-- Grid Parent -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- 1 -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-xl hover:border-primary/20 transition-all">
+            <span class="material-symbols-outlined text-primary mb-4">smart_toy</span>
+            <h4 class="font-bold text-slate-900 mb-2">Workflow Automation</h4>
+            <p class="text-slate-500 text-sm">Streamlines departmental communication across departments.</p>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-xl hover:border-primary/20 transition-all">
+            <span class="material-symbols-outlined text-primary mb-4">monitoring</span>
+            <h4 class="font-bold text-slate-900 mb-2">Real-time Dashboards</h4>
+            <p class="text-slate-500 text-sm">Provides instant project health overview.</p>
+          </div>
+
+          <!-- 3 -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-xl hover:border-primary/20 transition-all">
+            <span class="material-symbols-outlined text-primary mb-4">key_visualizer</span>
+            <h4 class="font-bold text-slate-900 mb-2">KPI Tracking</h4>
+            <p class="text-slate-500 text-sm">Data-driven decisions via key metrics.</p>
+          </div>
+
+          <!-- 4 (Second Row - First Column) -->
+          <div
+            class="p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-xl hover:border-primary/20 transition-all">
+            <span class="material-symbols-outlined text-primary mb-4">hub</span>
+            <h4 class="font-bold text-slate-900 mb-2">Centralized Project Hub</h4>
+            <p class="text-slate-500 text-sm">One place for all project info.</p>
+          </div>
+
+          <!-- 5 (Second Row - Spans 2 Columns) -->
+          <div
+            class="md:col-span-2 p-6 rounded-2xl bg-white border border-slate-200 hover:shadow-xl hover:border-primary/20 transition-all">
+            <span class="material-symbols-outlined text-primary mb-4">web</span>
+            <h4 class="font-bold text-slate-900 mb-2">Mobile & Web Access</h4>
+            <p class="text-slate-500 text-sm">Access platform anytime, anywhere.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Key Product Features -->
+
+    <!-- Start Value Proposition -->
+    <section class="py-24 bg-slate-900 text-white overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-6 md:px-20 relative z-10">
+        <div class="grid lg:grid-cols-5 gap-10 text-center">
+          <div class="space-y-4">
+            <div class="text-primary text-4xl mb-4"><span class="material-symbols-outlined !text-5xl">bolt</span></div>
+            <h4 class="font-bold text-lg leading-tight">Improved Efficiency</h4>
+            <p class="text-slate-400 text-sm">Accelerate project delivery with optimized workflows.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-primary text-4xl mb-4"><span class="material-symbols-outlined !text-5xl">fact_check</span>
+            </div>
+            <h4 class="font-bold text-lg leading-tight">Enhanced Clarity</h4>
+            <p class="text-slate-400 text-sm">Increase transparency and accountability.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-primary text-4xl mb-4"><span
+                class="material-symbols-outlined !text-5xl">admin_panel_settings</span>
+            </div>
+            <h4 class="font-bold text-lg leading-tight">Empowered Management</h4>
+            <p class="text-slate-400 text-sm">Equip leaders with real-time insights.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-primary text-4xl mb-4"><span
+                class="material-symbols-outlined !text-5xl">account_balance_wallet</span></div>
+            <h4 class="font-bold text-lg leading-tight">Cost Control</h4>
+            <p class="text-slate-400 text-sm">Reduce budget overruns and delays.</p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-primary text-4xl mb-4"><span class="material-symbols-outlined !text-5xl">hub</span></div>
+            <h4 class="font-bold text-lg leading-tight">Data-Driven Culture</h4>
+            <p class="text-slate-400 text-sm">Foster data-based decision making.</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -left-20 top-0 w-64 h-64 bg-primary/20 rounded-full blur-[120px]"></div>
+    </section>
+    <!-- End Value Proposition -->
+
+    <!-- Start Dashboard & Insights -->
+    <section class="py-24 bg-background-light">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-black text-slate-900 mb-2">Dashboard & Insights</h2>
+          <!-- Gradient underline -->
+          <div class="w-20 h-1 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+          <p class="text-slate-600">C-level executive dashboards with real-time insights.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- insight -->
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary transition-colors">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4">
+              <span class="material-symbols-outlined">monitoring</span>
+            </div>
+
+            <h4 class="font-bold text-xl mb-2 text-slate-900">C-Level Executive Dashboards</h4>
+            <p class="text-slate-600 text-sm">Macro views for strategic decision-making.</p>
+          </div>
+
+          <!-- insight -->
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary transition-colors">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4">
+              <span class="material-symbols-outlined">timeline</span>
+            </div>
+
+            <h4 class="font-bold text-xl mb-2 text-slate-900">Real-Time Project Tracking</h4>
+            <p class="text-slate-600 text-sm">Monitor progress across projects.</p>
+          </div>
+
+          <!-- insight -->
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary transition-colors">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4">
+              <span class="material-symbols-outlined">analytics</span>
+            </div>
+
+            <h4 class="font-bold text-xl mb-2 text-slate-900">Risk & Performance Analysis</h4>
+            <p class="text-slate-600 text-sm">Identify risks and adjust strategies.</p>
+          </div>
+
+          <!-- insight -->
+          <div class="p-8 rounded-3xl bg-white border border-slate-200 hover:border-primary transition-colors">
+            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-4">
+              <span class="material-symbols-outlined">auto_graph</span>
+            </div>
+
+            <h4 class="font-bold text-xl mb-2 text-slate-900">Automated Reporting</h4>
+            <p class="text-slate-600 text-sm">Reduce manual work with auto-generated reports.</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- PMO Dashboard Preview -->
+        <div class="mt-12 rounded-3xl bg-white border border-slate-200 shadow-sm overflow-hidden">
+
+          <!-- Header -->
+          <div class="flex items-center justify-between bg-slate-900 px-8 py-1">
+            <h3 class="text-2xl font-bold text-white">PMO Dashboard</h3>
+            <div class="flex items-center gap-5 text-white">
+              <span class="material-symbols-outlined cursor-pointer">search</span>
+              <span class="material-symbols-outlined cursor-pointer">notifications</span>
+              <span class="material-symbols-outlined cursor-pointer">account_circle</span>
+            </div>
+          </div>
+
+          <div class="p-8">
+
+            <!-- KPI Progress Bars -->
+            <div class="space-y-6 mb-8">
+
+              <!-- Project Health -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-slate-700 font-medium">Project Health</span>
+                  <span class="text-primary font-semibold">+2.5%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-3">
+                  <div class="bg-primary h-3 rounded-full" style="width: 72%"></div>
+                </div>
+              </div>
+
+              <!-- On-Time Delivery -->
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="text-slate-700 font-medium">On-Time Delivery</span>
+                  <span class="text-primary font-semibold">+5%</span>
+                </div>
+                <div class="w-full bg-slate-200 rounded-full h-3">
+                  <div class="bg-primary h-3 rounded-full" style="width: 80%"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Alert Section -->
+            <div class="p-5 rounded-2xl bg-amber-50 border border-amber-200 mb-8">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-amber-600 mt-1">warning</span>
+                <div>
+                  <p class="font-semibold text-amber-800">Risk Alert</p>
+                  <p class="text-sm text-amber-700">
+                    Potential delay in materials procurement.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-4">
+              <button class="px-6 py-3 rounded-xl bg-slate-900 text-white font-medium hover:opacity-90 transition">
+                View Details
+              </button>
+              <button
+                class="px-6 py-3 rounded-xl border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
+                Download Reports
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Start Dashboard & Insights -->
+
+    <!-- Start Target User Groups -->
+    <section class="py-24 bg-white" id="dashboards">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="mb-20">
+          <h2 class="text-3xl md:text-4xl font-black text-slate-900 mb-2">Target User Groups</h2>
+          <!-- Gradient underline -->
+          <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+          <p class="text-slate-600 text-lg max-w-2xl">Primary users of Pulse PMO:</p>
+        </div>
+
+        <div class="space-y-16">
+
+          <!-- Contracting & Construction Companies -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl shadow-2xl border border-slate-100 overflow-hidden bg-slate-50">
+              <img class="w-full" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+                alt="Construction company project site with engineers reviewing plans" />
+            </div>
+            <div>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                <span class="material-symbols-outlined">construction</span>
+              </div>
+              <h4 class="text-2xl font-bold mb-0">Contracting & Construction Companies</h4>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Core users seeking to improve project management efficiency.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Centralized tracking of multi-site construction projects
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Real-time budget and procurement visibility
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Automated approval workflows for contracts and materials
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- PMO & Project Managers -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="lg:order-last rounded-3xl shadow-2xl border border-slate-100 overflow-hidden bg-slate-50">
+              <img class="w-full" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+                alt="Project manager reviewing analytics dashboard on laptop" />
+            </div>
+            <div>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                <span class="material-symbols-outlined">manage_accounts</span>
+              </div>
+              <h4 class="text-2xl font-bold mb-0">PMO & Project Managers</h4>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Direct users responsible for planning and monitoring projects.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Unified dashboard for tracking scope, schedule, and cost
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Early risk detection and performance indicators
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Automated reporting to stakeholders and executives
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Engineering Departments -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl shadow-2xl border border-slate-100 overflow-hidden bg-slate-50">
+              <img class="w-full"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                alt="Engineering team collaborating over technical drawings and project plans" />
+            </div>
+            <div>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                <span class="material-symbols-outlined">engineering</span>
+              </div>
+              <h4 class="text-2xl font-bold mb-0">Engineering Departments</h4>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Using platform for task coordination and management.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Structured task assignments and milestone tracking
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Document control and version management
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Clear cross-department collaboration workflows
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Executive Management -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="lg:order-last rounded-3xl shadow-2xl border border-slate-100 overflow-hidden bg-slate-50">
+              <img class="w-full" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+                alt="Executive reviewing high-level performance dashboard" />
+            </div>
+            <div>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                <span class="material-symbols-outlined">monitoring</span>
+              </div>
+              <h4 class="text-2xl font-bold mb-0">Executive Management</h4>
+              <p class="text-slate-600 mb-6 leading-relaxed">
+                Using dashboards for strategic decisions and monitoring.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Portfolio-level performance visibility
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Budget variance and ROI analysis
+                </li>
+                <li class="flex gap-2 text-sm font-medium text-slate-700">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span>
+                  Data-driven strategic planning insights
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Target User Groups -->
+
+    <!-- Start Our Power Platform Solutions Suite -->
+    <section class="py-24 bg-background-light">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-black text-slate-900 mb-2">Our Power Platform Solutions Suite</h2>
+          <!-- Gradient underline -->
+          <div class="w-20 h-1 mx-auto bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+          <p class="text-slate-600">We provide a suite of Power Apps tailored to digitalize business operations. Each
+            app automates complex workflows, integrates with Microsoft 365, and provides real-time insights.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+            <div class="text-primary mb-4"><span class="material-symbols-outlined !text-4xl">person_search</span></div>
+            <h4 class="font-bold text-slate-900 mb-2">Candidate Interview Form</h4>
+            <p class="text-slate-500 text-xs mb-4">Simplifies candidate evaluation and collaboration between HR and
+              departments.</p>
+            <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">Preview
+              Form <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+            <div class="text-primary mb-4"><span class="material-symbols-outlined !text-4xl">fact_check</span></div>
+            <h4 class="font-bold text-slate-900 mb-2">Justification Form</h4>
+            <p class="text-slate-500 text-xs mb-4">Manages procurement justifications between PMO, Project Managers, and
+              approvers.</p>
+            <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">Preview
+              Form <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+            <div class="text-primary mb-4"><span class="material-symbols-outlined !text-4xl">shopping_cart</span></div>
+            <h4 class="font-bold text-slate-900 mb-2">Purchase Order Form</h4>
+            <p class="text-slate-500 text-xs mb-4">Automates purchase order creation and approval hierarchy.</p>
+            <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">Preview
+              Form <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all">
+            <div class="text-primary mb-4"><span class="material-symbols-outlined !text-4xl">cancel_presentation</span>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2">Order Cancellation Form</h4>
+            <p class="text-slate-500 text-xs mb-4">Allows departments to cancel or modify procurement orders.</p>
+            <button class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">Preview
+              Form <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Power Platform Solutions Suite -->
+
+    <!-- Start Integration & Automation Framework -->
+    <section class="py-24 bg-white border-y border-slate-100" id="integration">
+      <div class="max-w-7xl mx-auto px-6 md:px-20">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            <h2 class="text-primary font-bold uppercase text-xs tracking-widest mb-4">The Solution Suite</h2>
+            <h3 class="text-3xl font-black text-slate-900 mb-2">Integration & Automation Framework</h3>
+            <!-- Gradient underline -->
+            <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+            <p class="text-slate-600 mb-10 leading-relaxed">
+              Each app integrates seamlessly with Microsoft ecosystem:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <!-- Power Apps -->
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 flex-shrink-0">
+                  <span class="material-symbols-outlined">apps</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900">Power Apps</h3>
+                  <p class="text-sm text-slate-600 mt-1">
+                    User interface for submitting requests, managing data, and interacting with business workflows.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Power Automate -->
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 flex-shrink-0">
+                  <span class="material-symbols-outlined">sync_alt</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900">Power Automate</h3>
+                  <p class="text-sm text-slate-600 mt-1">
+                    Approval workflows, automated notifications, and process routing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- SharePoint -->
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 flex-shrink-0">
+                  <span class="material-symbols-outlined">folder</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900">SharePoint</h3>
+                  <p class="text-sm text-slate-600 mt-1">
+                    Record storage, document management, and attachment handling.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Power BI -->
+              <div class="flex gap-4">
+                <div
+                  class="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center text-slate-600 flex-shrink-0">
+                  <span class="material-symbols-outlined">bar_chart</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-slate-900">Power BI</h3>
+                  <p class="text-sm text-slate-600 mt-1">
+                    Process analytics, performance dashboards, and KPI tracking.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="relative">
+            <div class="p-12 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col items-center gap-8">
+              <div
+                class="p-6 bg-white rounded-2xl shadow-lg border border-slate-100 w-full max-w-xs text-center relative z-10">
+                <h5 class="font-bold text-slate-900">User Input</h5>
+                <p class="text-xs text-slate-500">Power Apps Forms</p>
+              </div>
+              <div class="w-1 h-12 bg-primary/20 relative">
+                <div
+                  class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full border-4 border-transparent border-t-primary/20">
+                </div>
+              </div>
+              <div class="p-6 bg-primary rounded-2xl shadow-xl w-full max-w-xs text-center text-white relative z-10">
+                <h5 class="font-bold">Logic &amp; Automation</h5>
+                <p class="text-xs text-primary-200">Power Automate Flow</p>
+              </div>
+              <div class="w-1 h-12 bg-primary/20 relative">
+                <div
+                  class="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-full border-4 border-transparent border-t-primary/20">
+                </div>
+              </div>
+              <div
+                class="p-6 bg-white rounded-2xl shadow-lg border border-slate-100 w-full max-w-xs text-center relative z-10">
+                <h5 class="font-bold text-slate-900">Governance &amp; Insights</h5>
+                <p class="text-xs text-slate-500">Power BI Dashboards</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Integration & Automation Framework -->
+
+    <!-- Start PULSE PMO Forms -->
+    <section class="py-24 bg-background-light" id="form-section">
+      <!-- Candidate Interview Form -->
+      <div class="max-w-7xl mx-auto px-6 pb-10 md:px-20">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+          <!-- Left Content -->
+          <div>
+            <div class="mb-16">
+              <h2 class="text-3xl font-black text-slate-900 mb-2">Candidate Interview Form</h2>
+              <!-- Gradient underline -->
+              <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+              <p class="text-slate-600">Simplifies candidate evaluation and collaboration between HR and departments.
+              </p>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Evaluation of technical & behavioral competencies</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Final decision logging & PDF export</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Images -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200 sm:col-span-2">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/candidiate-interview/image(1).png"
+                alt="Main form overview">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/candidiate-interview/image(2).png"
+                alt="Form detail view">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/candidiate-interview/image(3).png"
+                alt="Form interaction example">
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Justification Form -->
+      <div class="max-w-7xl mx-auto px-6 py-10 md:px-20">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+          <!-- Left Content -->
+          <div>
+            <div class="mb-16">
+              <h2 class="text-3xl font-black text-slate-900 mb-2">Justification Form</h2>
+              <!-- Gradient underline -->
+              <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+
+              <p class="text-slate-600">Manages procurement justifications between PMO, Project Managers, and approvers.
+              </p>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">New Request form for project justification</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Role-based access and status tracking</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Comment history & attachments</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Images -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200 sm:col-span-2">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/justificaiton/image(1).png"
+                alt="Main form overview">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/justificaiton/image(2).png" alt="Form detail view">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/justificaiton/image(3).png"
+                alt="Form interaction example">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Purchase Order Form -->
+      <div class="max-w-7xl mx-auto px-6 py-10 md:px-20">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <!-- Left Content -->
+          <div>
+            <div class="mb-16">
+              <h2 class="text-3xl font-black text-slate-900 mb-2">Purchase Order Form</h2>
+              <!-- Gradient underline -->
+              <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+              <p class="text-slate-600">Automates purchase order creation and approval hierarchy.</p>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Captures supplier, project, and budget details</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Auto-approvals based on hierarchy</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Rejection handling & resubmission</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Images -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200 sm:col-span-2">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/purchase-order/image(1).png"
+                alt="Main form overview">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/purchase-order/image(2).png" alt="Form detail view">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/purchase-order/image(3).png"
+                alt="Form interaction example">
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+      <!-- Order Cancellation Form -->
+      <div class="max-w-7xl mx-auto px-6 pt-10 md:px-20">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+          <!-- Left Content -->
+          <div>
+            <div class="mb-16">
+              <h2 class="text-3xl font-black text-slate-900 mb-2">Order Cancellation Form</h2>
+              <!-- Gradient underline -->
+              <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary rounded-full mb-4"></div>
+              <!--  -->
+              <p class="text-slate-600">Allows departments to cancel or modify procurement orders.</p>
+            </div>
+
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Capture cancellation reason & request type</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Track comments and approvals</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary">check_circle</span>
+                <span class="text-slate-700 font-medium">Downloadable PDF records</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Images -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200 sm:col-span-2">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/order-cancellation/image(1).png"
+                alt="Main form overview">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/order-cancellation/image(2).png"
+                alt="Form detail view">
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-lg border border-slate-200">
+              <img class="rounded-xl w-full" src="/assets/pulse-pmo/order-cancellation/image(3).png"
+                alt="Form interaction example">
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!-- End PULSE PMO Forms -->
+
+    <!--  -->
+    <section class="py-24 bg-primary relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-20 text-center relative z-10">
+        <h2 class="text-white text-4xl md:text-5xl font-black mb-8">Transform Your PMO with <br /> Intelligent
+          Automation.</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-white text-primary px-8 py-4 rounded-xl text-lg font-black shadow-2xl hover:bg-slate-50 transition-all">
+            Book a Strategy Session
+          </button>
+          <button
+            class="bg-primary-dark bg-opacity-20 border-2 border-white/30 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/10 transition-all">
+            Request Technical Overview
+          </button>
+        </div>
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+        <svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+          <path d="M0 100 Q 50 0 100 100" fill="none" stroke="white" stroke-width="0.5"></path>
+          <path d="M0 80 Q 50 -20 100 80" fill="none" stroke="white" stroke-width="0.5"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="bg-slate-900 py-16 px-6 md:px-20 border-t border-white/5">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+        <div class="col-span-1">
+          <div class="flex items-center gap-3 text-white mb-6">
+            <div class="bg-white p-2 rounded-md">
+              <img src="/assets/pulse-pmo/logo.svg" alt="logo" class="w-48">
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            The future of enterprise project governance. Scalable, intelligent, and native to Microsoft.
+          </p>
+          <div class="flex gap-4">
+            <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                class="material-symbols-outlined">public</span></a>
+            <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                class="material-symbols-outlined">alternate_email</span></a>
+            <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                class="material-symbols-outlined">share</span></a>
+          </div>
+        </div>
+        <div class="col-span-1">
+          <h5 class="text-white font-bold mb-6">Solutions</h5>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="#">Portfolio Governance</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Resource Management</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Financial Control</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Strategic Planning</a></li>
+          </ul>
+        </div>
+        <div class="col-span-1">
+          <h5 class="text-white font-bold mb-6">Company</h5>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Customer Stories</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-span-1">
+          <h5 class="text-white font-bold mb-6">Support</h5>
+          <ul class="space-y-4 text-slate-400 text-sm">
+            <li><a class="hover:text-primary transition-colors" href="#">Knowledge Base</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Contact Support</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Implementation Guide</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">API Documentation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto pt-16 mt-16 border-t border-white/5 text-center text-slate-500 text-xs">
+        © 2024 Pulse PMO. All rights reserved. Microsoft, Power Apps, and Power BI are trademarks of the Microsoft group
+        of companies.
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+</body>
+
+</html>

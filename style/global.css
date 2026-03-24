@@ -96,6 +96,24 @@ ul {
 
 /* End Backgrounds */
 
+/* Start Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: -1;
+}
+
+#overlay.show-overlay {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* End Overlay */
+
 /* Start Main Title */
 .title-container {
   margin-bottom: 3em;
