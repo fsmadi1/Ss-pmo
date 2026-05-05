@@ -6,13 +6,6 @@
 
 :root {
   --body-bg: linear-gradient(145deg, #0f1c22 0%, #1f5f7c 45%, #121212 100%);
-  /* Background for Safari Browser */
-  --body-bg-safari: linear-gradient(
-    145deg in srgb,
-    #0f1c22 0%,
-    #1f5f7c 45%,
-    #121212 100%
-  );
   /*  */
   --primary-blue: #2c88b2;
   --shadow-blue: #1f5f7c;
@@ -30,9 +23,22 @@ body {
   margin: 0;
   font-family: "Readex Pro", sans-serif;
   background-color: #121212;
-  background-image: var(--body-bg-safari);
+  background-image: url("../assets/body-bg.png");
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*  */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -117,6 +123,7 @@ ul {
 /* Start Main Title */
 .title-container {
   margin-bottom: 3em;
+  position: relative;
 }
 
 .title-container h2.main-title {
@@ -197,16 +204,17 @@ ul {
 
 /* Start Box Style 1 */
 .box-style-1 {
-  background: linear-gradient(
-    135deg,
-    hsl(195 30% 14%) 0%,
-    hsl(195 25% 10%) 100%
-  );
+  background-color: #1a2f3870;
+  backdrop-filter: blur(10px);
   /*  */
   padding: 30px;
   border-radius: 15px;
   /*  */
-  border: 1px solid var(--grey-color);
+  box-shadow:
+    0 6px 16px rgba(31, 95, 124, 0.28),
+    0 0 12px rgba(44, 136, 178, 0.15);
+  border: 0.5px solid var(--shadow-blue);
+  /*  */
   transition:
     border-color 0.3s,
     background-color 0.3s;
@@ -240,12 +248,10 @@ html[lang="ar"] .box-style-1::before {
 }
 
 .box-style-1.why-us-box {
-  background: transparent;
-  border: none;
-}
+  /* background: transparent; */
 
-.box-style-1.why-us-box:hover {
-  background-color: hsla(193, 25%, 18%, 0.3);
+  /*  */
+  /* border: none; */
 }
 
 .box-style-1 .title {

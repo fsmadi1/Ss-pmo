@@ -105,14 +105,14 @@
 }
 
 .flipswitch-inner:before {
-  content: "العربية";
+  content: "English";
   padding-left: 10px;
   background-color: var(--shadow-blue);
   color: #ffffff;
 }
 
 .flipswitch-inner:after {
-  content: "English";
+  content: "العربية";
   padding-right: 10px;
   background-color: var(--shadow-yellow);
   color: white;
@@ -242,22 +242,20 @@
   position: relative;
 }
 
-.hero-section::before {
+/* .hero-section::before {
   content: "";
   position: absolute;
   left: -5em;
   right: -5em;
   top: -5em;
   bottom: -5em;
-  /*  */
   background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   opacity: 0.1;
-  /*  */
   z-index: -1;
-}
+} */
 
 .hero-section .container .inside {
   text-align: center;
@@ -451,6 +449,7 @@ html[lang="ar"] .hero-section .container .inside > span:last-of-type {
 /* Start Why Us */
 .why-us {
   padding: var(--section-padding) 0;
+  position: relative;
 }
 
 .why-us .why-us-content {
@@ -476,11 +475,24 @@ html[lang="ar"] .hero-section .container .inside > span:last-of-type {
   margin-bottom: 3em;
 }
 
-.why-us .stats .box {
-  background-color: rgba(0, 0, 0, 0.335);
-
+/* .why-us .stats .box {
+  backdrop-filter: blur(10px);
+  
+  box-shadow:
+    0 6px 16px rgba(31, 95, 124, 0.28),
+    0 0 12px rgba(44, 136, 178, 0.15);
+  
+  border: 1px solid var(--shadow-blue);
   border-radius: 10px;
   padding: 25px;
+} */
+
+.why-us .stats .box {
+  padding: 25px 6em 25px 0;
+}
+
+html[lang="ar"] .why-us .stats .box {
+  padding: 25px 0 25px 6em;
 }
 
 .why-us .stats .box span {
@@ -505,6 +517,8 @@ html[lang="ar"] .hero-section .container .inside > span:last-of-type {
 
 .footer {
   border-top: 1px solid hsla(0, 0%, 65%, 0.3);
+  position: relative;
+  backdrop-filter: blur(10px);
 }
 
 .footer .container .inside {
